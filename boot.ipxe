@@ -1,0 +1,8 @@
+  #!ipxe
+  
+  set base http://mirror.hnd.cl/rockylinux/8.8/BaseOS/x86_64/os
+  set ksurl http://raw.
+  prompt -k 0x197e -t 2000 Press F12 to install CentOS... || exit
+  kernel ${base}/images/pxeboot/vmlinuz initrd=initrd.img inst.repo=${base}
+  initrd ${base}/images/pxeboot/initrd.img
+  boot
