@@ -1,8 +1,9 @@
-  #!ipxe
+#!ipxe
   
-  set base http://mirror.hnd.cl/rockylinux/8.8/BaseOS/x86_64/os
-  set ksurl https://raw.githubusercontent.com/garci66/pf-boot/main/pf-micro.cfg
+set base http://mirror.hnd.cl/rockylinux/8.8/BaseOS/x86_64/os
+set ksurl https://raw.githubusercontent.com/garci66/pf-boot/main/pf-micro.cfg
 
-  kernel ${base}/images/pxeboot/vmlinuz initrd=initrd.img inst.repo=${base} inst.ks=${ksurl}
-  initrd ${base}/images/pxeboot/initrd.img
-  boot
+imgfree
+kernel ${base}/images/pxeboot/vmlinuz initrd=initrd.img inst.repo=${base} inst.ks=${ksurl}
+initrd ${base}/images/pxeboot/initrd.img
+boot
