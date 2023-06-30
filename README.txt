@@ -3,9 +3,8 @@ boot ipxe using iso / similar
 set the ilo boot url to the following:
 http://boot.netboot.xyz/ipxe/netboot.xyz.iso
 
-  Press Ctrl-B for the iPXE command line...
 
-then, once booted, 
+then, once booted, select the ipxe shell from the menu
 in the shell call the following:
 
 chain https://raw.githubusercontent.com/garci66/pf-boot/main/boot.ipxe
