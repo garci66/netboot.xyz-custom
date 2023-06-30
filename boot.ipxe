@@ -1,8 +1,9 @@
   #!ipxe
   
   set base http://mirror.hnd.cl/rockylinux/8.8/BaseOS/x86_64/os
-  set ksurl http://raw.
+  set ksurl https://raw.githubusercontent.com/garci66/pf-boot/main/pf-micro.cfg
+
   prompt -k 0x197e -t 2000 Press F12 to install CentOS... || exit
-  kernel ${base}/images/pxeboot/vmlinuz initrd=initrd.img inst.repo=${base}
+  kernel ${base}/images/pxeboot/vmlinuz initrd=initrd.magic inst.repo=${base} inst.ks=${ksurl}
   initrd ${base}/images/pxeboot/initrd.img
   boot
