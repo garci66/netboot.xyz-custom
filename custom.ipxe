@@ -9,15 +9,15 @@ item tiny tiny m720q with nvme drive rocky8
 choose target && goto ${target}
 
 :micro
-set ksurl https://raw.githubusercontent.com/garci66/pf-boot/main/pf-micro.cfg
+set ksurl https://raw.githubusercontent.com/garci66/netboot.xyz-custom/main/pf-micro.cfg
 goto runboot
 
 :esxi
-set ksurl https://raw.githubusercontent.com/garci66/pf-boot/main/pf-esxi.cfg
+set ksurl https://raw.githubusercontent.com/garci66/netboot.xyz-custom/main/pf-esxi.cfg
 goto runboot
 
 :tiny
-set ksurl https://raw.githubusercontent.com/garci66/pf-boot/main/pf-m720q.cfg
+set ksurl https://raw.githubusercontent.com/garci66/netboot.xyz-custom/main/pf-m720q.cfg
 goto runboot
 
 :runboot
