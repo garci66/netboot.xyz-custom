@@ -15,6 +15,10 @@ goto runboot
 set ksurl https://raw.githubusercontent.com/garci66/pf-boot/main/pf-esxi.cfg
 goto runboot
 
+:tinyM720q
+set ksurl https://raw.githubusercontent.com/garci66/pf-boot/main/pf-m720q.cfg
+goto runboot
+
 :runboot
 imgfree
 kernel ${base}/images/pxeboot/vmlinuz initrd=initrd.magic inst.repo=${base} inst.ks=${ksurl}
