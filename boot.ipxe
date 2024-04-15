@@ -5,6 +5,7 @@ set base http://mirror.hnd.cl/rockylinux/8.8/BaseOS/x86_64/os
 menu Please chose the platform to deply
 item micro Microserver G10 SATA
 item esxi ESXI vm with disk on paravirtualized controller
+item tinyM720q tiny m720q with nvme drive - rocky8
 choose target && goto ${target}
 
 :micro
